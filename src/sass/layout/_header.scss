@@ -1,0 +1,42 @@
+header {
+    background-color: #11131F;
+   
+}
+
+.header_wrap {
+     display: flex;
+     align-items: center;
+     border-bottom: 1px solid rgba(246, 245, 239, 0.20);
+     padding-top: 25px;
+     padding-bottom: 25px;
+     justify-content: space-between;
+}
+
+.header_list {
+    display: none;
+    gap: 25px;
+}
+
+.header_list_item {
+    color: #F6F5EF;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.logo {
+    max-height: 23px;
+}
+
+.header-modal-svg {
+    height: 24px;
+    width: 24px;
+}
+@media screen and (min-width: 704px) {
+    .header_list {
+        display: flex;
+    }
+
+    .header-modal-svg {
+        display: none;
+    }
+}
