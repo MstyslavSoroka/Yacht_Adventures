@@ -1,8 +1,10 @@
 <article>
     <header>
         <div class="header-wrap container">
-        <img class="mobilelogo" src="./images/desktoplogo.png" alt="logo">
-        <img class="desktoplogo" src="./images/mobilelogo.png" alt="logo">
+            <picture>
+                <source media="(min-width: 704px)" srcset="./images/desktoplogo.png" />
+                <img src="./images/mobilelogo.png" alt="logo"/>
+              </picture>
         <ul class="header_list">
             <li class="header_list_item">About</li>
             <li class="header_list_item">Yachts</li>
