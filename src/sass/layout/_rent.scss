@@ -1,0 +1,50 @@
+.rent-title {
+  margin-top: 80px;
+  margin-bottom: 16px;
+  color: #f6f5ef;
+  font-family: 'DM Sans';
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 110%; /* 39.6px */
+  letter-spacing: -1.62px;
+}
+.rent-img {
+  margin-bottom: 40px;
+}
+.rent-form-label {
+  color: #f6f5ef;
+  font-family: 'DM Sans';
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 120%; /* 16.8px */
+  letter-spacing: -0.63px;
+  display: flex;
+  flex-direction: column;
+}
+.rent-form-input {
+  width: 335px;
+  border: none;
+  border-bottom: 1px solid #f6f5ef;
+  background-color: transparent;
+  margin-bottom: 24px;
+}
+.rent-form-comment {
+  padding-bottom: 20px;
+}
+.rent-form-submit {
+  border: none;
+}
+.rent-submit-input {
+  border-radius: 60px;
+  width: 123px;
+  height: 43px;
+  background-color: transparent;
+  color: #f6f5ef;
+  font-family: 'DM Sans';
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 110%; /* 15.4px */
+  letter-spacing: -0.63px;
+}
