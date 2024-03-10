@@ -18,9 +18,12 @@
     z-index: 999;
 
     transform: translateX(9999px);
-    // transition: transform 250ms ease-in-out;
+    transition: transform 250ms ease-in-out;
 
-    background-color: #11131F;
+    background-image: url(.././images/mobile/menu-bg.jpg);
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
 
 }
 
