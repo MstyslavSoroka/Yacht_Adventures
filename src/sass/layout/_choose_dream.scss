@@ -1,0 +1,154 @@
+.choose_dream {
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+
+.section-title {
+    font-size: 23px;
+    color: #F6F5EF;
+    font-weight: 500;
+    padding-bottom: 40px;
+}
+
+.dream_description {
+    font-size: 14px;
+    color: #F6F5EF;
+    max-width: 160px;
+    line-height: 140%;
+}
+
+.description_div {
+    display: flex;
+    gap: 15px;
+    padding-bottom: 40px;
+}
+
+.yacht-img-list {
+    display: flex;
+    flex-direction: column;
+}
+
+.yacht-img-list>li:not(:last-child) {
+    margin-bottom: 24px;
+}
+
+.yacht-img-list>li:last-child {
+    display: flex;
+    align-self: flex-end;
+}
+
+.dream_title {
+    font-size: 36px;
+    font-weight: 500;
+    color: #F6F5EF;
+    padding-bottom: 40px;
+}
+
+.rental-div {
+    margin-top: -125px;
+}
+
+
+@media screen and (min-width: 704px) {
+    .section-title {
+        max-width: 514px;
+        font-size: 32px;
+    }
+
+    .description_div {
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    .dream_description {
+        font-size: 16px;
+        max-width: 183px;
+    }
+
+    .yacht-img-list>li:not(:last-child) {
+        margin-bottom: 0;
+    }
+
+    .yacht-img-list>li:first-child {
+        margin-bottom: 32px;
+    }
+
+    .yacht-img-list>li:last-child {
+        align-self: flex-start;
+        margin-left: 336px;
+        margin-top: -70px;
+    }
+
+    .dream_title {
+        font-size: 70px;
+        font-weight: 500;
+    }
+
+    .choose_dream {
+        padding-top: 100px;
+        padding-bottom: 100px;
+    }
+}
+
+@media screen and (min-width: 1216px) {
+
+    .choose_dream {
+        padding-top: 164px;
+        padding-bottom: 164px;
+    }
+
+    .dream_description_block {
+        display: flex;
+        justify-content: space-between;
+        padding-bottom: 64px;
+    }
+
+    .yacht-img-list {
+        flex-direction: row;
+        position: relative;
+    }
+
+    .yacht-img-list>li:last-child {
+        margin-left: 0px;
+        margin-top: 0px;
+    }
+
+    .yacht-img-list>li:first-child {
+        order: 3;
+    }
+
+    .yacht-img-list>li:last-child {
+        position: absolute;
+        top: 505px;
+        left: 339px;
+        z-index: -1;
+    }
+
+    .yacht-img-list {
+        padding-bottom: 100px;
+    }
+
+    .yacht-img-list>li:nth-child(2) {
+        margin-top: 256px;
+        margin-right: 32px;
+    }
+
+    .dream_title {
+        max-width: 882px;
+        font-size: 100px;
+    }
+
+    .rental-div {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        padding-top: 95px;
+    }
+
+    .rental-div>button {
+        max-width: 153px;
+        align-self: flex-start;
+        margin-left: 168px;
+    }
+}
