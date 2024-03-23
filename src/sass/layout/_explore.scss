@@ -32,6 +32,12 @@ span {
     color: #F6F5EF;
     padding: 14px 28px 14px 28px;
     border-radius: 20px;
+    margin-right: 15px;
+}
+
+
+.get-started:hover {
+    background-color:  #88B3B9;
 }
 
 .explore {
@@ -43,6 +49,12 @@ span {
     font-size: 14px;
     color: #F6F5EF;
 }
+
+.explore:hover {
+    border-color: #BEC7C2;
+    color: #BEC7C2;
+}
+
 
 .explore-div {
     padding-bottom: 40px;
