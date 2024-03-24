@@ -1,6 +1,7 @@
 .customers {
   font-family: 'DM Sans';
   font-weight: 500;
+  padding-bottom: 50px;
 }
 .customers-title {
   color: #f6f5ef;
@@ -19,16 +20,15 @@
   letter-spacing: -0.28px;
   margin-bottom: 40px;
 }
-.customers-item {
-  display: flex;
-  //   width: 335px;
-  //   height: 208px;
+.customers-item { 
   padding: 24px;
   flex-direction: column;
   align-items: center;
   gap: 8px;
   border-radius: 24px;
   background: #1f212d;
+  max-height: 208px;
+  justify-content: space-between;
 }
 .customers-item:not(:last-child) {
   margin-bottom: 20px;
@@ -56,6 +56,74 @@
   margin-left: 290px;
 }
 
+.customers-btn {
+  right: 30px;
+  bottom: 30px;
+  position: fixed;
+  z-index: 1;
+}
+
+.customers-list {
+  display: none;
+}
+// =====================Slider===================
+.customers-item {
+  display: flex;
+  width: 335px;
+  height: 266px;
+  
+}
+.customers-item-name {
+  color: #f6f5ef;
+  text-align: center;
+  font-size: 16px;
+  line-height: 110%; /* 17.6px */
+  letter-spacing: -0.72px;
+}
+.customers-item-subtitle {
+  color: rgba(246, 245, 239, 0.5);
+  text-align: center;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 140%; /* 16.8px */
+  letter-spacing: -0.24px;
+}
+.slick-dots {
+  position: absolute;
+  bottom: -30px; /* Adjust this value to place the dots where you want */
+  left: 50%;
+  transform: translateX(-50%);
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+  width: auto; /* Adjust this value to fit the dots properly */
+}
+.slick-dots li {
+  margin: 0 5px;
+}
+.slick-dots li button {
+  font-size: 0;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  outline: none;
+}
+.slick-dots li button::before {
+  content: '•';
+  font-size: 18px;
+  color: #1F212D;
+}
+.slick-dots li.slick-active button::before {
+  color: #88B3B9;
+}
+.slick-slider {
+  position: relative;
+}
+// ============Slider==========================================
+
 @media screen and (min-width: 704px) {
   .customers-title {
     font-size: 32px;
@@ -72,17 +140,20 @@
     margin-left: 659px;
   }
   .customers-list {
-    display: flex;
+    // display: flex;
     flex-direction: row;
     flex-wrap: wrap;
   }
   .customers-item {
     width: 344px;
-    padding: 24px 32px;
+    max-height: 266px;
+    height: 266px;
   }
-  .customers-item:not(:last-child) {
-    margin-right: 5px;
-  }
+
+  .customers-item {
+    margin-right: 5px; 
+    margin-left: 5px;
+}
   .customers-item:last-child {
     margin-left: 180px;
   }
@@ -101,8 +172,12 @@
     width: 68px;
     height: 68px;
   }
-}
+  }
 @media screen and (min-width: 1216px) {
+  .slider {
+    display: none;
+  }
+
   .customers-title-wrap {
     display: flex;
     flex-direction: row;
@@ -126,6 +201,7 @@
     flex-wrap: nowrap;
     align-items: center;
     gap: 32px;
+    display: flex;
   }
   .customers-item {
     margin: 0;
@@ -152,9 +228,5 @@
     line-height: 140%;
     letter-spacing: -0.32px;
   }
-  .customers-btn {
-    right: 30px;
-    bottom: 30px;
-    position: fixed;
-  }
+  
 }
