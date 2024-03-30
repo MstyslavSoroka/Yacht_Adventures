@@ -1,6 +1,7 @@
 .customers {
   font-family: 'DM Sans';
   font-weight: 500;
+  margin-bottom: 50px;
 }
 .customers-title {
   color: #f6f5ef;
@@ -54,9 +55,12 @@
   border: none;
   background-color: transparent;
   margin-left: 290px;
+  right: 30px;
+  bottom: 30px;
+  position: fixed;
 }
 
-@media screen and (min-width: 704px) {
+@media screen and (min-width: 768px) {
   .customers-title {
     font-size: 32px;
     letter-spacing: -1.44px;
@@ -102,7 +106,10 @@
     height: 68px;
   }
 }
-@media screen and (min-width: 1216px) {
+@media screen and (min-width: 1280px) {
+  .customers {
+    margin-bottom: 164px;
+  }
   .customers-title-wrap {
     display: flex;
     flex-direction: row;
@@ -151,10 +158,5 @@
     font-weight: 400;
     line-height: 140%;
     letter-spacing: -0.32px;
-  }
-  .customers-btn {
-    right: 30px;
-    bottom: 30px;
-    position: fixed;
   }
 }
