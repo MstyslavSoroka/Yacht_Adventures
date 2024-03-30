@@ -1,186 +1,180 @@
 .explore-seas {
-   padding-top: 40px; 
+  padding-top: 40px;
 }
 
 .title {
-    font-size: 36px;
-    font-weight: 500;
-    color: #F6F5EF;
+  font-size: 36px;
+  font-weight: 500;
+  color: #f6f5ef;
 }
 
 span {
-    background: #BEC7C2;
-    background: linear-gradient(to right, #BEC7C2 41%, #A1B5BA 90%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    font-style: italic;
+  background: #bec7c2;
+  background: linear-gradient(to right, #bec7c2 41%, #a1b5ba 90%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-style: italic;
 }
 
 .explore-description {
-    font-weight: 400;
-    font-size: 14px;
-    color: #F6F5EF;
-    padding-top: 15px;
-    padding-bottom: 25px;
+  font-weight: 400;
+  font-size: 14px;
+  color: #f6f5ef;
+  padding-top: 15px;
+  padding-bottom: 25px;
 }
 
 .get-started {
-    background-color: #93ABAE;
-    border: none;
-    font-size: 14px;
-    font-weight: 700;
-    color: #F6F5EF;
-    padding: 14px 28px 14px 28px;
-    border-radius: 20px;
-    margin-right: 15px;
+  background-color: #93abae;
+  border: none;
+  font-size: 14px;
+  font-weight: 700;
+  color: #f6f5ef;
+  padding: 14px 28px 14px 28px;
+  border-radius: 20px;
+  margin-right: 15px;
 }
 
-
 .get-started:hover {
-    background-color:  #88B3B9;
+  background-color: #88b3b9;
 }
 
 .explore {
-    border: 1px solid  #F6F5EF;
-    background-color: transparent;
-    padding: 14px 28px 14px 28px;
-    border-radius: 20px;
-    font-weight: 700;
-    font-size: 14px;
-    color: #F6F5EF;
+  border: 1px solid #f6f5ef;
+  background-color: transparent;
+  padding: 14px 28px 14px 28px;
+  border-radius: 20px;
+  font-weight: 700;
+  font-size: 14px;
+  color: #f6f5ef;
 }
 
 .explore:hover {
-    border-color: #BEC7C2;
-    color: #BEC7C2;
+  border-color: #bec7c2;
+  color: #bec7c2;
 }
 
-
 .explore-div {
-    padding-bottom: 40px;
+  padding-bottom: 40px;
 }
 
 .explore-card {
-    position: relative;
+  position: relative;
 }
 
 .client-photo-list {
-    display: flex;
-    
+  display: flex;
 }
 
 .client-div {
-    position: absolute;
-    top: 24px;
-    left: 24px;
+  position: absolute;
+  top: 24px;
+  left: 24px;
 }
 
-.client-div>p {
-    color: #11131F;
-    font-weight: 700;
-    font-size: 14px;
+.client-div > p {
+  color: #11131f;
+  font-weight: 700;
+  font-size: 14px;
 }
-    
+
 .client-photo-list-item:not(:first-child) {
-    margin-left: -10px;
+  margin-left: -10px;
 }
 
 .man-photo {
-    position: absolute;
-    top: 37px;
-    left: 214px;
-    
+  position: absolute;
+  top: 37px;
+  left: 214px;
 }
 
-.man-photo>img {
-border-radius: 24px;
+.man-photo > img {
+  border-radius: 24px;
 }
 
 .yacht {
-    position: absolute;
-    top: 150px;
-    left: 24px;
+  position: absolute;
+  top: 150px;
+  left: 24px;
 }
 
 .yacht-price {
-    color: #11131F;
-    font-size: 48px;
-    font-weight: 400;
-    padding-right: 14px;
+  color: #11131f;
+  font-size: 48px;
+  font-weight: 400;
+  padding-right: 14px;
 }
 
 .yacht-details {
-    display: flex;
-    position: absolute;
-    bottom: 48px;
-    left: 24px;
-    align-items: center;
+  display: flex;
+  position: absolute;
+  bottom: 48px;
+  left: 24px;
+  align-items: center;
 }
 
 .book-yacht {
-    color: #11131F;
-    font-size: 14px;
-    font-weight: 400;
+  color: #11131f;
+  font-size: 14px;
+  font-weight: 400;
 }
 
+@media screen and (min-width: 768px) {
+  .title {
+    font-size: 60px;
+  }
 
-@media  screen and (min-width: 704px) {
-    .title {
-        font-size: 60px;
-    }
+  .explore-description {
+    max-width: 539px;
+    font-size: 16px;
+  }
 
-    .explore-description {
-        max-width: 539px;
-        font-size: 16px;
-    }
+  .explore-div {
+    padding-bottom: 60px;
+  }
 
-    .explore-div {
-        padding-bottom: 60px;
-    }
+  .client-div {
+    top: 32px;
+    left: 32px;
+  }
 
-    .client-div {
-        top: 32px;
-        left: 32px;
-    }
+  .man-photo {
+    top: 32px;
+    left: 339px;
+  }
 
-    .man-photo {
-        top: 32px;
-        left: 339px;
-    }
+  .yacht {
+    top: 225px;
+  }
 
-    .yacht {
-        top: 225px;
-    }
+  .yacht-details {
+    bottom: 64px;
+    left: 37px;
+  }
 
-    .yacht-details {
-        bottom: 64px;
-        left: 37px;
-    }
+  .yacht-price {
+    font-size: 60px;
+  }
 
-    .yacht-price {
-        font-size: 60px;
-    }
-
-    .book-yacht {
-        font-size: 18px;
-        max-width: 230px;
-    }
+  .book-yacht {
+    font-size: 18px;
+    max-width: 230px;
+  }
 }
 
+@media screen and (min-width: 1280px) {
+  .man-photo {
+    left: 307px;
+  }
 
-@media screen and (min-width: 1216px) {
-    .man-photo {
-        left: 307px;
-    }
+  .explore-seas {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+  }
 
-    .explore-seas {
-        display: flex;
-        flex-direction: row-reverse;
-        justify-content: space-between;
-        align-items: center;
-    }
-
-    .title {
-        max-width: 555px;
-    }
+  .title {
+    max-width: 555px;
+  }
 }
