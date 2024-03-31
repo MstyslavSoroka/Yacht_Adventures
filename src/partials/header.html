@@ -1,38 +1,55 @@
-  <article>
-    <header>
-        <div class="header_wrap container">
-            <picture class="logo">
-                <source media="(min-width: 704px)" srcset="./images/desktop/desktoplogo.png" />
-                <img src="./images/mobile/mobilelogo.png" alt="logo"/>
-              </picture>
-        <ul class="header_list">
-            <li class="header_list_item">About</li>
-            <li class="header_list_item">Yachts</li>
-            <li class="header_list_item">Reviews</li>
-        </ul>
-        
-        <button class="menu-toggle js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
-        <svg id="header-modal-svg" width="40" height="40" class="header-modal-svg">
-            <use href="./images/sprite.svg#icon-menu"></use>
+<article>
+  <header id="header">
+    <div class="header_wrap container">
+      <picture class="logo">
+        <source
+          media="(min-width: 704px)"
+          srcset="./images/desktop/desktoplogo.png"
+        />
+        <img src="./images/mobile/mobilelogo.png" alt="logo" />
+      </picture>
+      <ul class="header_list">
+        <li class="header_list_item">About</li>
+        <li class="header_list_item">Yachts</li>
+        <li class="header_list_item">Reviews</li>
+      </ul>
+
+      <button
+        class="menu-toggle js-open-menu"
+        aria-expanded="false"
+        aria-controls="mobile-menu"
+      >
+        <svg
+          id="header-modal-svg"
+          width="40"
+          height="40"
+          class="header-modal-svg"
+        >
+          <use href="./images/sprite.svg#icon-menu"></use>
         </svg>
+      </button>
+      <div class="menu-container js-menu-container" id="mobile-menu">
+        <div class="modal-header">
+          <img src="./images/mobile/mobilelogo.png" alt="logo" />
+          <button class="menu-toggle js-close-menu">
+            <svg
+              class="header-modal-close"
+              fill="currentColor"
+              viewBox="0 0 20 20"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <use href="./images/sprite.svg#icon-cross"></use>
+            </svg>
           </button>
-        <div class="menu-container js-menu-container" id="mobile-menu">
-            <div class="modal-header">
-                <img src="./images/mobile/mobilelogo.png" alt="logo"/>
-                <button class="menu-toggle js-close-menu">
-                    <svg class="header-modal-close" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                      <use href="./images/sprite.svg#icon-cross"></use>
-                    </svg>
-                  </button>
-            </div>
-            <ul class="modal-list">
-                <li class="header_list_item">About</li>
-                <li class="header_list_item">Yachts</li>
-                <li class="header_list_item">Reviews</li>
-            </ul>
-            <div class="ellipse"></div>
-            <div class="ellipse ellipse2"></div>
-          </div>
+        </div>
+        <ul class="modal-list">
+          <li class="header_list_item">About</li>
+          <li class="header_list_item">Yachts</li>
+          <li class="header_list_item">Reviews</li>
+        </ul>
+        <!-- <div class="ellipse"></div>
+            <div class="ellipse ellipse2"></div> -->
+      </div>
     </div>
-</header>
+  </header>
 </article>

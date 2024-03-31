@@ -1,82 +1,84 @@
 .menu-toggle {
-    margin: 0;
-    padding: 0;
-    background-color: transparent;
-    cursor: pointer;
-    border: none;
-    border-radius: 50%;
-    outline: none;
+  margin: 0;
+  padding: 0;
+  background-color: transparent;
+  cursor: pointer;
+  border: none;
+  border-radius: 50%;
+  outline: none;
 }
 
 .menu-container {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100vw;
-    height: 100vh;
-    background-color: #fff;
-    z-index: 999;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: #fff;
+  z-index: 999;
 
-    transform: translateX(9999px);
-    // transition: transform 250ms ease-in-out;
+  transform: translateX(9999px);
+  transition: transform 250ms ease-in-out;
 
-    background-color: #11131F;
-
+  background-image: url(.././images/mobile/menu-bg.jpg);
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .menu-container.is-open {
-    transform: translateX(0);
+  transform: translateX(0);
 }
 
 .js-close-menu {
-    height: 24px;
-    width: 24px;
+  height: 24px;
+  width: 24px;
 }
 
 .modal-header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    border-bottom: 1px solid rgba(246, 245, 239, 0.20);
-    padding: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid rgba(246, 245, 239, 0.2);
+  padding: 32px;
 }
 
 .modal-list {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 15px;
-    padding-top: 140px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  padding-top: 140px;
 }
 
 .ellipse {
-    width: 279px;
-    height: 279px;
-    transform: rotate(-44.916deg);
-    flex-shrink: 0;
-    border-radius: 279px;
-    opacity: 0.9;
-    background: #939CAC;
+  width: 279px;
+  height: 279px;
+  transform: rotate(-44.916deg);
+  flex-shrink: 0;
+  border-radius: 279px;
+  opacity: 0.9;
+  background: #939cac;
 
-    filter: blur(100px);
-    position: absolute;
-    bottom: 40px;
-    left: -50px;
-    // margin-top: 259px;
-    // margin-right: 391px;
+  filter: blur(100px);
+  position: absolute;
+  bottom: 40px;
+  left: -50px;
+  // margin-top: 259px;
+  // margin-right: 391px;
 }
 
 .ellipse2 {
-    bottom: -100px;
-    left: 260px;
+  bottom: -100px;
+  left: 260px;
 }
 
-@media screen and (min-width: 704px) {
-    .menu-toggle {
-        display: none;
-    }
+@media screen and (min-width: 768px) {
+  .menu-toggle {
+    display: none;
+  }
 
-    .ellipse {
-        display: none;
-    }
+  .ellipse {
+    display: none;
+  }
 }
