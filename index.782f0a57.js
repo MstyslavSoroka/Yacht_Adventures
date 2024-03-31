@@ -1,0 +1,2 @@
+$(document).ready((function(){$(".slider").slick({dots:!0,arrows:!1,infinite:!0,speed:300,slidesToShow:1,adaptiveHeight:!0,appendDots:$(".slider"),dotsClass:"slick-dots"}),$(window).on("resize",(function(){$(window).width()>768?$(".slider").slick("slickSetOption","slidesToShow",2,!0):$(".slider").slick("slickSetOption","slidesToShow",1,!0)})).resize()}));
+//# sourceMappingURL=index.782f0a57.js.map
