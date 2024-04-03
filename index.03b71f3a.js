@@ -1,0 +1,2 @@
+$(document).ready((function(){$(".customers-slider").slick({dots:!0,arrows:!1,infinite:!0,speed:300,slidesToShow:1,adaptiveHeight:!0,appendDots:$(".customers-slider"),dotsClass:"slick-dots"}),$(window).on("resize",(function(){$(window).width()>768?$(".customers-slider").slick("slickSetOption","slidesToShow",2,!0):$(".customers-slider").slick("slickSetOption","slidesToShow",1,!0)})).resize()}));
+//# sourceMappingURL=index.03b71f3a.js.map
