@@ -1,5 +1,7 @@
-.rent-title {
+.rent {
   margin-top: 80px;
+}
+.rent-title {
   margin-bottom: 16px;
   color: #f6f5ef;
   font-family: 'DM Sans';
@@ -27,6 +29,7 @@
   width: 335px;
   border: none;
   border-bottom: 1px solid #f6f5ef;
+  color: #f6f5ef;
   background-color: transparent;
   margin-bottom: 24px;
 }
@@ -47,4 +50,37 @@
   font-weight: 700;
   line-height: 110%; /* 15.4px */
   letter-spacing: -0.63px;
+  display: flex;
+  padding: 14px 28px;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  border-color: #f6f5ef;
+}
+@media screen and (min-width: 768px) {
+  .rent {
+    margin-top: 100px;
+  }
+  .rent-title {
+    font-size: 60px;
+    line-height: 110%; /* 66px */
+    letter-spacing: -2.7px;
+    margin-right: 60px;
+  }
+  .rent-wrap {
+    display: flex;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .rent {
+    padding-left: 180px;
+    padding-right: 150px;
+  }
+  .rent-title {
+    font-size: 60px;
+    font-weight: 500;
+    line-height: 110%; /* 66px */
+    letter-spacing: -2.7px;
+    margin-right: 190px;
+  }
 }

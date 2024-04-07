@@ -1,8 +1,10 @@
 <section class="rent container">
-  <h2 class="rent-title">Rent a yacht now</h2>
   <div class="rent-wrap">
-    <img class="rent-img" src="./images/desktop/rent-yacht.jpg" alt="yacht" />
-    <form class="rent-form">
+    <div class="rent-title-wrap">
+      <h2 class="rent-title">Rent a <br />yacht now</h2>
+      <img class="rent-img" src="./images/desktop/rent-yacht.jpg" alt="yacht" />
+    </div>
+    <form class="rent-form" id="myForm">
       <label class="rent-form-label">Full Name</label>
       <input type="text" class="rent-form-input" name="fname" />
       <label class="rent-form-label">Email</label>
@@ -18,15 +20,24 @@
         cols="41"
       ></textarea>
       <br />
-      <button class="rent-form-submit">
+      <button class="rent-form-submit" onclick="openPopup()">
         <input class="rent-submit-input" type="submit" value="Send" />
-        <svg class="rent-svg" width="40" height="40">
-          <use href="./images/sprite.svg#icon-arrow_right"></use>
-        </svg>
       </button>
     </form>
   </div>
-  <div class="ellipse-wrap">
-    <img src="./images/ellipse-rent.png" alt="" />
+  <div id="popup" class="popup">
+    <div class="popup-content">
+      <button class="close">&times;</button>
+      <img class="popup-img" src="./images/pop_up_yacht.png" alt="yacht" />
+      <div class="popup-text">
+        <h2 class="popup-title">Thank You</h2>
+        <p class="popup-subtitle">
+          Thank you for choosing Yacht Adventures, your booking details have
+          been received and our team will be in touch shortly to confirm your
+          reservation and provide any additional information or assistance you
+          may need.
+        </p>
+      </div>
+    </div>
   </div>
 </section>
